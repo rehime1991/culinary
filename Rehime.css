@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(1.jpg);
+	z-index: -1;
+}
+#div1{
+	z-index: 5;
+	display: flex;
+}
+#div1 #ul1{
+	position: relative;
+	left: 50%;
+	display: flex;
+}
+#div1 #ul1 li{
+	display: flex;
+	list-style: none;
+}
+#div1 #ul1 li a{
+	text-decoration: none;
+	color: black;
+	font-size: 23px;
+	padding: 10px;
+	margin: 5px 10px;
+}
+#div1 #ul1 li a:hover{
+	color: yellow;
+	font-weight: 900;
+}
+
+#div2{
+	z-index: 5;
+	background: rgb(255, 255, 115);
+	opacity: .85;
+	display: flex;
+}
+#div2 a{
+	z-index: 5;
+	padding: 10px;
+	font-size: 30px;
+	margin: 10px 20px;
+	color: black;
+	text-decoration: none;
+}
+#div2 a:hover{
+	color: orangered;
+}
+
+#div3{
+	display: inline-block;
+	position: relative;
+	top: 30px;
+	width: 70%;
+	z-index: 5;
+}
+#div3 figure{
+	z-index: 5;
+	width: 45%;
+	display: inline-block;
+}
+#div3 figure img{
+	z-index: 5;
+	width: 90%;
+	margin: 1% 5%;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#div3 figure figcaption{
+	border-bottom: 1px solid white;
+	color: white;
+	font-size: 30px;
+	position: relative;
+	left: 40px;
+	bottom: 60px;
+	display: inline-block;
+}
+
+#div4{
+	display: inline-block;
+	width: 25%;
+	background: white;
+	opacity: .5;
+	position: relative;
+	bottom: 375px;
+	right: 30px;
+	padding: 5px 15px;
+	padding-left: 30px;
+}
+#div4 h1{
+	text-align: center;
+}
+#div4 figure{
+	display: inline-block;
+	width: 45%;
+}
+#div4 figure figcaption{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+#div4 figure img{
+	width: 50%;
+	margin: 40px;
+	margin-bottom: 10px;
+}
+#div4 figure figcaption{
+	margin-bottom: 40px;
+}
+
+
+#back{
+	opacity: .9;
+	background: gray;
+	position: absolute;
+	width: 100%;
+	height: 150%;
+	left: 0;
+	top: 130px;
+	z-index: -1;
+}
+
+
+@media (max-width: 550px){
+	#back{
+		height: 600%;
+	}
+	#div1{
+		display: block;
+	}
+	#div1 #ul1{
+		display: block;
+		left: 0;
+	}
+	#div1 #ul1 li{
+		display: block;
+	}
+	#div3{
+		width: 96%;
+		margin: 2%;
+	}
+	#div3 figure{
+		width: 96%;
+	}
+	#div3 figure img{
+		width: 100%;
+		margin: 0;
+	}
+	#div3 figure figcaption{
+		font-size: 20px;
+		left: 20px;
+		bottom: 45px;
+		font-weight: 900;
+		padding: 5px;
+	}
+
+	#div4{
+	    display: inline-block;
+	    width: 90%;
+	    background: white;
+	    opacity: .5;
+	    position: relative;
+	    bottom: 0;
+	    right: 0;
+	    padding: 5px 15px;
+	    padding-left: 30px;
+    }
+}
